@@ -1,0 +1,79 @@
+article p{
+    background: blue;
+    color: white;
+    padding: 20px;
+}
+
+article > p{
+    background: red;
+}
+
+article ~ p{
+    background: purple;
+    color: white;
+    padding: 20px;
+
+}
+article + p{
+    background: orange;
+    color: white;
+    padding: 20px;
+
+}
+
+h3:first-of-type{
+    background-color: aqua;
+    color: white;
+}
+
+input:in-range{
+    border: 3px solid green;
+}
+
+
+input:required{
+    background-color: #9ee5f0;
+}
+input:focus{
+    background-color: yellow;
+}
+
+input:invalid{
+    border: 2px solid red;
+}
+input:valid{
+    border: 2px solid green;
+}
+
+span:first-of-type{
+    background: black;
+    color: wheat;
+    padding: 10px;
+}
+form{
+    margin-top: 50px;
+}
+
+p{
+    width: 200px;
+}
+
+p::first-line{
+    color: blue;
+
+}
+
+p::first-letter{
+    font-size: 40px;
+}
+p::before{
+    content: url();
+}
+p::selection{
+    color: pink;
+    background: yellow;
+}
+
+div{
+    opacity: 0.5;
+}

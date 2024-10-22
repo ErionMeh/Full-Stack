@@ -1,0 +1,41 @@
+ul{
+    border-left: 5px solid green;
+    background-color: #f1f1f1;
+    list-style-type: none;
+    padding: 0;
+
+}
+ul li{
+    padding: 8px 16px;
+    border-bottom: solid grey;
+}
+ol{
+    background: #ffeeee;
+    padding: 15px;
+    list-style-type: none;
+}
+ol li{
+    background: #00004e;
+    padding: 10px;
+    margin-left: 30px;
+    color: white;
+}
+table{
+border-collapse: collapse;
+}
+td,th{
+    border: 1px solid #eee;
+    padding: 15px;
+}
+tbody tr:nth-child(odd){
+    background-color: pink;
+}
+tbody tr:nth-child(even){
+    background-color: blue;
+}
+div{
+    overflow: scroll;
+    background-color: #f27979;
+    width: 200px;
+    height: 200px;
+}

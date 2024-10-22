@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="firstname">First Name:</label><br />
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          value="John"
+          readonly
+        /><br />
+        <label for="lastname">Last name:</label><br />
+        <input type="text" id="lastname" name="lastname" disabled /><br />
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          size="40"
+          maxlength="50"
+          required
+        /><br />
+        <label for="password">Password:</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+        /><br /><br />
+        <label>Gender:</label><br />
+        <input type="radio" id="male" name="Gender" value="male" />
+        <label>Male</label><br />
+        <input type="radio" id="female" name="Gender" value="female" />
+        <label>Female</label><br /><br />
+        <label>Hobbies:</label><br />
+        <input type="checkbox" id="gaming" name="gaming" value="Gaming" />
+        <label for="gaming">Gaming</label><br />
+        <input type="checkbox" id="football" name="football" value="Football" />
+        <label for="football">Football</label><br />
+        <input type="checkbox" id="swimming" name="swimming" value="Swimming" />
+        <label for="swimming">Swimming</label><br /><br />
+        <label for="pet">Choose a pet:</label>
+        <select name="pet" id="pet">
+          <option value="Dog">Dog</option>
+          <option value="Cat">Cat</option>
+          <option value="Parrot">Parrot</option></select
+        ><br /><br />
+        <textarea name="message" rows="10" cols="20"></textarea><br />
+
+        <br />
+        <input type="submit" id="submit" name="submit" />
+      </fieldset>
+    </form>
+    <hr />
+
+    <article>
+      <h2>This is an article</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi
+        error, molestiae est ducimus animi voluptates. Amet velit iure error,
+        soluta animi nostrum fuga iusto hic laborum maiores officia. Veniam!
+      </p>
+    </article>
+    <details>
+      <summary>Digital School</summary>
+      <p>Digital school is an...</p>
+    </details>
+    <figure>
+      <img
+        src="https://media.istockphoto.com/id/537331500/photo/programming-code-abstract-technology-background-of-software-deve.jpg?s=612x612&w=0&k=20&c=jlYes8ZfnCmD0lLn-vKvzQoKXrWaEcVypHnB5MuO-g8="
+        alt=""
+      />
+      <figcaption>Fig.1 - Coding picture</figcaption>
+    </figure>
+    <hr />
+    <section>
+      <h2>Introduction</h2>
+      <p>this course will teach you how to create websites</p>
+    </section>
+  </body>
+</html>
