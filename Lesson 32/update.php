@@ -2,23 +2,25 @@
 
     include_once ('config.php');
 
-    if (isset($_POST['submit'])) {
+    if (isset($_POST['update'])) {
+        $id = $_POST['id'];
         $name = $_POST['name'];
         $username = $_POST['username'];
         $email = $_POST['email']; 
 
-
-        $sql = "INSERT INTO users(name, username, email) VALUES (:name, :username, :email)";
+        
+        $sql = "UPDATE users SET name=:name, username=:username, email=:email WHERE id=:id";
     
         $sqlQuery = $connect->prepare($sql);
     
+        $sqlQuery->bindParam(':id', $id);
         $sqlQuery->bindParam(':name', $name);
         $sqlQuery->bindParam(':username', $username);
         $sqlQuery->bindParam(':email', $email);
     
         $sqlQuery->execute();
     
-        echo "The user was added successfully";
+        header("Location:index.php");
     }
     
 
