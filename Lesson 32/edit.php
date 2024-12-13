@@ -41,7 +41,7 @@
         <input type="hidden" name="id" value="<?php echo $data['id']?>"><br>
         <input type="text" name="name" value="<?php echo $data['name']?>"><br>
         <input type="text" name="username" value="<?php echo $data['username']?>"><br>
-        <input type="email" name="email " value="<?php echo $data['email']?>"><br>
+        <input type="email" name="email" value="<?php echo $data['email']?>"><br>
         <button type="submit" name="update">Update</button>
     </form>  
 </body>
